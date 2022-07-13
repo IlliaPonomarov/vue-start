@@ -7,11 +7,8 @@
 <body>
 
 <div id="app-2">
-
-    <h1 v-for="addr in address">
-
-        {{addr.text}}
-    </h1>
+    {{text}}
+    <input v-on:click="reverseMessage" value="Reverse Message" type="submit"/>
 
 </div>
 

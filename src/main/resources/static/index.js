@@ -1,5 +1,6 @@
 
 
+
 var app = new Vue({
     el: '#app-2',
     data: {
@@ -10,7 +11,15 @@ var app = new Vue({
             {text: 'JavaScript' },
             {text : 'Vue'}
         ]
-}
+    },
+
+    methods : {
+      reverseMessage : function (){
+          this.text = this.text.split('').reverse().join('')
+      }
+    }
+
+
 })
 
 
