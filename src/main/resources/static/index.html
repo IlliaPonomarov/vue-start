@@ -7,8 +7,13 @@
 <body>
 
 <div id="app-2">
-    {{text}}
-    <input v-on:click="reverseMessage" value="Reverse Message" type="submit"/>
+
+<fuck v-for="ll in list"
+       v-bind:item="ll"
+      v-bind:key="ll.id"
+      >
+
+</fuck>
 
 </div>
 
